@@ -1,67 +1,488 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-   <head>
-       <meta charset="utf-8">
-       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-       <title>Research Project</title>
-       <meta name="description" content="">
-       <meta name="viewport" content="width=device-width, initial-scale=1">
-       <!-- STYLE SHEETS -->
-       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-       <link rel="stylesheet" href="style.css">
-       <!-- JAVASCRIPT -->
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-   </head>
-   <body>
-        <!-- NAVIGATION -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                    </ul>
-                </div>
-                </div>
-                </nav>
-                <!-- HERO SECTION-->
-        <div class="px-4 py-5 mb-5 text-center bg-light">
-            <h1 class="display-5 fw-bold">Centered hero</h1>
-            <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-            </div>
-            </div>
-        </div>
-        <!-- THREE COLUMNS -->
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-sm-4 px-5 my-3">
-                    <img src="img/placeholder.png" class="img-fluid rounded-circle mb-3 feature">
-                    <h5>Column</h5>
-                </div>
-                <div class="col-sm-4 px-5 my-3">
-                        <img src="img/placeholder.png" class="img-fluid rounded-circle mb-3 feature">
-                        <h5>Column</h5>
-                </div>
-                <div class="col-sm-4 px-5 my-3">
-                    <img src="img/placeholder.png" class="img-fluid rounded-circle mb-3 feature">
-                    <h5>Column</h5>
-                </div>
-            </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Research Project</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-   </body>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+     
+  </head>
+  <body>
+    <!-- NAVBAR START -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed bg-dark" id="nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Research Project</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto me-s-auto mb-2 mb-md-0 text-end">
+            <li class="nav-item">
+            <li class="nav-item">
+              <a class="nav-link" href="#image">Fun Facts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#slides">Video</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tabs">Summary/Essential Question</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- HERO SECTION START -->
+    <div class="hero-section py-5">
+      <main class="container py-5">
+        <div class="p-5 rounded">
+          <h1>Interesting Facts About The US Military</h1>
+          <p class="lead">
+            Learn some interesting facts about the US military that you may have not known before!
+          </p>
+        </div>
+      </main>
+    </div>
+    <!-- HERO SECTION END -->
+
+    <!-- QUICK LINKS START -->
+    <div class="bg-dark text-white py-5 text-center quick-links">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-3 py-5-xs">
+            <i class="bi bi-building"></i>
+          </div>
+          <div class="col-sm-6 col-md-3 py-5-xs">
+            <i class="bi bi-newspaper"></i>
+            <p></p>
+          </div>
+          <div class="col-sm-6 col-md-3 py-5-xs">
+            <i class="bi bi-boombox"></i>
+            <p></p>
+          </div>
+          <div class="col-sm-6 col-md-3 py-5-xs">
+            <i class="bi bi-person"></i>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- QUICK LINKS END -->
+
+    <!-- ONE COLUMN START -->
+    <div class="container py-5" id="about">
+      <div class="row">
+        <h1 class="text-center pb-1 fw-bold" id="about">Fun Facts</h1>
+      </div>
+    </div>
+    <!-- ONE COLUMN END -->
+
+    <!-- 2/3, 1/3 SECTION START -->
+    <div class="bg-aquamarine py-5" id="image">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-sm-8">
+            <img src="img/apollo.png" class="img-fluid" />
+          </div>
+          <div class="col-sm-4 pt-5">
+            <h2 class="fw-bold">1. The Army is older than the country</h2>
+            <p>
+              Creating a unified Army that was lef by George Washington was passed by the Second Continental
+              Congress on June 14, 1775. So, technically speaking, the United States Army is older than the country
+              itself, being founded on July 4th, 1776.
+            </p>
+            <a href="https://www.army.mil/1775/" target="_blank">
+              <button type="button" class="btn btn-lg btn-dark">
+                  Source <i class="bi bi-chevron-right"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 2/3, 1/3 SECTION END -->
+
+    <!-- VIDEO SECTION START -->
+    <div class="bg-aquamarine py-5" id="image">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-sm-8">
+              <img src="img/coast.png" class="img-fluid" />
+            </div>
+            <div class="col-sm-4 pt-5">
+              <h2 class="fw-bold">2. The U.S. Coast Guard is not part of the Department of Defense</h2>
+              <p>
+                With about 40k members, the U.S. Coast Guard is a part of the Department of Homeland Security,
+                which their main task is to safeguard maritime facilities and marine areas to prevent any incidents
+                or pollution in marine spaces.
+
+              </p>
+              <a href="https://bestlifeonline.com/crazy-army-facts/" target="_blank">
+                <button type="button" class="btn btn-lg btn-dark">
+                    Source <i class="bi bi-chevron-right"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- VIDEO SECTION END -->
+
+    <!-- VIDEO SECTION START -->
+    <div class="bg-aquamarine py-5" id="image">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-sm-8">
+                <img src="img/air.png" class="img-fluid" />
+            </div>
+            <div class="col-sm-4 pt-5">
+                <h2 class="fw-bold">3. The Air Force was part of the Army until 1946.</h2>
+                <p>
+                Until 1947, the Air Force was called the Army Air Corps until the National Security Act
+                of 1947 turned it into its own separate branch of our armed forces. Today, it also oversees 
+                the Space Force, the first new military branch created in over 70 years.
+    
+                </p>
+                <a href="https://bestlifeonline.com/crazy-army-facts/" target="_blank">
+                  <button type="button" class="btn btn-lg btn-dark">
+                      Source <i class="bi bi-chevron-right"></i>
+                  </button>
+                </a>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!-- VIDEO SECTION END -->
+
+    <!-- VIDEO SECTION START -->
+    <div class="bg-aquamarine py-5" id="image">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-sm-8">
+              <img src="img/presidents.png" class="img-fluid" />
+          </div>
+          <div class="col-sm-4 pt-5">
+              <h2 class="fw-bold">4. 31 of the 46 presidents have served in the military.</h2>
+              <p>
+                President Teddy Roosevelt earned the Medal of Honor, the highest honor in the military. The only enlisted President who didn't become an officer was James Buchanan.
+              </p>
+              <a href="https://www.vehiclesforveterans.org/10-interesting-facts-for-armed-forces-day/" target="_blank">
+                <button type="button" class="btn btn-lg btn-dark">
+                    Source <i class="bi bi-chevron-right"></i>
+                </button>
+              </a>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- VIDEO SECTION END -->
+
+    <!-- VIDEO SECTION START -->
+    <div class="bg-aquamarine py-5" id="image">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-sm-8">
+              <img src="img/marine.png" class="img-fluid" />
+          </div>
+          <div class="col-sm-4 pt-5">
+              <h2 class="fw-bold">5. The U.S. Military is one of the largest providers of
+              international aid and disaster relief.</h2>
+              <p>
+                Ships called Marine Expeditionary Units patrol the oceans watching for signs of danger and can reach the shoreline of nearly any location on Earth within 48 hours.
+              </p>
+              <a href="https://www.vehiclesforveterans.org/10-interesting-facts-for-armed-forces-day/" target="_blank">
+                <button type="button" class="btn btn-lg btn-dark">
+                    Source <i class="bi bi-chevron-right"></i>
+                </button>
+              </a>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- VIDEO SECTION END -->
+
+    <!-- VIDEO SECTION START -->
+    <div class="bg-aquamarine py-5" id="image">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-sm-8">
+              <img src="img/womenwwI.png" class="img-fluid" />
+          </div>
+          <div class="col-sm-4 pt-5">
+              <h2 class="fw-bold">6. The first time women were allowed to enlist in a non-nursing role was during WWI.</h2>
+              <p>
+                The first women in the military worked in clerical roles and as Signal Corps operators. This allowed more men to take on combat roles. In 1948, President Harry Truman signed an anti-discrimination bill. This attempted to put an end to racial discrimination in the military, but also discrimination against women joining the military. This bill allowed women to enlist in times of peace, rather than just war time.
+              </p>
+              <a href="https://www.vehiclesforveterans.org/10-interesting-facts-for-armed-forces-day/" target="_blank">
+                <button type="button" class="btn btn-lg btn-dark">
+                    Source <i class="bi bi-chevron-right"></i>
+                </button>
+              </a>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- VIDEO SECTION END -->
+
+    <!-- VIDEO SECTION START -->
+    <div class="bg-aquamarine py-5" id="image">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-sm-8">
+              <img src="img/military.png" class="img-fluid" />
+          </div>
+          <div class="col-sm-4 pt-5">
+              <h2 class="fw-bold">7. Only 28 percent of Americans ages 17-23 are eligible for military service.</h2>
+              <p>
+                Nearly 1.4 million Americans, or .4 percent of the U.S. population, are active military personnel.
+              </p>
+              <a href="https://www.vehiclesforveterans.org/10-interesting-facts-for-armed-forces-day/" target="_blank">
+                <button type="button" class="btn btn-lg btn-dark">
+                    Source <i class="bi bi-chevron-right"></i>
+                </button>
+              </a>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- VIDEO SECTION END -->
+
+    <!-- VIDEO SECTION START -->
+    <div class="bg-aquamarine py-5" id="image">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-sm-8">
+              <img src="img/deseg.png" class="img-fluid" />
+          </div>
+          <div class="col-sm-4 pt-5">
+              <h2 class="fw-bold">8. The U.S. military began to desegregate long before civilian institutions.</h2>
+              <p>
+                Schools and other public institutions were ordered to desegregate in 1954, but many lagged behind into the 1980s. The Army, on the other hand, had the first desegregated troops during WWI.
+              </p>
+              <a href="https://www.vehiclesforveterans.org/10-interesting-facts-for-armed-forces-day/" target="_blank">
+                <button type="button" class="btn btn-lg btn-dark">
+                    Source <i class="bi bi-chevron-right"></i>
+                </button>
+              </a>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- VIDEO SECTION END -->
+
+    <!-- VIDEO SECTION START -->
+    <div class="bg-aquamarine py-5" id="image">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-sm-8">
+              <img src="img/dod.png" class="img-fluid" />
+          </div>
+          <div class="col-sm-4 pt-5">
+              <h2 class="fw-bold">9. The Department of Defense (DoD) is the largest employer in the U.S</h2>
+              <p>
+                There are more than 1.4 million active-duty personnel, 1.1 million National Guard and Reserve personnel and 700,000 civilians working for the DoD.
+              </p>
+              <a href="https://www.vehiclesforveterans.org/10-interesting-facts-for-armed-forces-day/" target="_blank">
+                <button type="button" class="btn btn-lg btn-dark">
+                    Source <i class="bi bi-chevron-right"></i>
+                </button>
+              </a>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- VIDEO SECTION END -->
+
+    <!-- VIDEO SECTION START -->
+    <div class="bg-aquamarine py-5" id="image">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-sm-8">
+              <img src="img/diploma.png" class="img-fluid" />
+          </div>
+          <div class="col-sm-4 pt-5">
+              <h2 class="fw-bold">10. Military members are more highly educated than the general population.</h2>
+              <p>
+                Those who enlist are required to have a high school diploma or a GED. That means that 99 percent of the military has a high school education. On the other hand, only 60 percent of the general population has a high school education.
+              </p>
+              <a href="https://www.vehiclesforveterans.org/10-interesting-facts-for-armed-forces-day/" target="_blank">
+                <button type="button" class="btn btn-lg btn-dark">
+                    Source <i class="bi bi-chevron-right"></i>
+                </button>
+              </a>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- VIDEO SECTION END -->
+
+    <!-- SLIDE PRESENTATION START -->
+    <div class="bg-dark text-white py-5 presentation" id="slides">
+      <div class="container">
+        <div class="row">
+          <div class="col-md py-5">
+            <h2 class="fw-bold">Learn More</h2>
+            <p>
+              If you still want to learn more, watch this video linked below to learn
+              more about the U.S. Military!
+            </p>
+            <a href="https://www.youtube.com/watch?v=BubAF7KSs64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <button type="button" class="btn btn-lg btn-dark">
+                  Video <i class="bi bi-chevron-right"></i>
+              </button>
+            </a>
+          </div>
+          <div class="col-md-8 py-5">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BubAF7KSs64?si=y0QiMjFbzr3TGIlo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SLIDE PRESENTATION END -->
+
+
+    <!-- TABS SECTION START -->
+    <div class="container py-5" id="tabs">
+      <div class="row py-5">
+          <div class="row">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Summary</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Essential Question</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                      <h4 class="pt-5 fw-bold" id="about">Summary</h4>
+                      <p>
+                        In order to create this website, I looked at multiple websites and looked through all of the fun facts that were given. When I found the best ones, I would use those websites in order to combine it into one website that would share the most interesting facts about the US Military many may have not known before.
+                      </p>
+              
+                      <p>
+                        Throughout this semester, I learned a lot about how to design a website and what a good website is. I learned more about coding than I ever have before and I used all of my knowledge that I gained in order to put my research project together. Throughout my research project, I learned more about the US Military and applied that knowledge to create this website.
+                      </p>
+                  </div>
+                  <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                      <h4 class="pt-5 fw-bold" id="about">Essential Question</h4>
+                          <p>
+                              How does conflict lead to change?
+                          </p>
+                          <p>
+                            Conflict can help nations to confront their beliefs, values, and behaviors, becoming
+                            more self aware about their actions. Conflict can help nations unite and make something
+                            terrible in history never ever happen again. Conflict can help overthrow regimes and dictatorship,
+                            moving towards peace in the world.
+                          </p>
+                  </div>
+                  <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                      <h4 class="pt-5 fw-bold" id="about">Contacts</h4>
+                          <p>
+                            Email: 266011@glenbrook225.org
+                          </p>
+                  
+                          <p>
+                          
+                          </p>
+                  </div>
+                </div>
+              </div>
+      </div>
+  </div>
+  <!-- TABS SECTION END -->
+
+    <!-- FOOTER START -->
+    <div class="bg-dark text-white py-5 footer">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-sm-3 pb-5">
+              <h5>Embed Youtube Channel</h3>
+              <ul class="text-white-50">
+                  <li>RealLifeLore</li>
+                  <lili>
+                  <lili>
+                  <lili>
+              </ul>
+          </div>
+          <div class="col-sm-3 pb-5">
+              <h5>Websites</h3>
+                  <ul class="text-white-50">
+                      <li>https://www.vehiclesforveterans.org/10-interesting-facts-for-armed-forces-day/</li>
+                      <li>https://bestlifeonline.com/crazy-army-facts/</li>
+                      <li>https://www.army.mil/1775/</li>
+                      <lili>
+                  </ul>
+          </div>
+          <div class="col-sm-3 pb-5">
+              <h5></h3>
+                  <ul class="text-white-50">
+                      <lili>
+                      <lili>
+                      <lili>
+                      <lili>
+                  </ul>
+          </div>
+          <div class="col-sm-3 pb-5">
+              </h5></h3>
+                  <ul class="text-white-50">
+                      <lili>
+                      <lili>
+                      <lili>
+                      <lili>
+                  </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER END -->
+
+    <!-- BACK TO TOP START -->
+    <a href="#nav">
+        <i class="bi bi-arrow-up-circle-fill to-top text-black"></i>
+    </a>
+    <!-- BACK TO TOP START -->
+
+    <script src="" async defer></script>
+  </body>
 </html>

@@ -1,3 +1,94 @@
-body{
-    background:grey;
-}
+/*
+=================================================
+MISC
+=================================================
+*/
+.quick-links i {
+    font-size: 3em;
+  }
+  .to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 40px;
+  }
+  .nav-link {
+    color: #50a98a;
+  }
+  .nav-link:hover {
+    color:#3a7b64;
+  }
+  .btn-unique {
+    background-color: white;
+    color: #000;
+  }
+  .btn-unique:hover {
+    background-color: white;
+    color: #000;
+  }
+  /*
+  =================================================
+  NAVBAR
+  =================================================
+  */
+  .navbar-brand {
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+  }
+  
+  /*
+  =================================================
+  HERO SECTION
+  =================================================
+  */
+  .hero-section {
+    background-image: url("img/flag.png");
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .hero-section h1 {
+    color: #000;
+    font-size: 56px;
+    font-weight: 900;
+  }
+  
+  .hero-section .lead {
+    color: #000;
+    font-weight: 300;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+    font-size: 22px;
+  }
+  
+  /*
+  =================================================
+  SECTIONS
+  =================================================
+  */
+  .bg-aquamarine {
+    background-color: white;
+  }
+  
+  .video iframe {
+    width: 100%;
+    max-width: 700px;
+    height: 392px;
+  }
+  .map iframe {
+    width: 100%;
+    height: 600px;
+  }
+  .presentation iframe {
+    width: 100%;
+    max-width: 856px;
+    height: 518px;
+  }
+  /*
+  =================================================
+  FOOTER
+  =================================================
+  */
+  .footer h5 {
+    text-transform: uppercase;
+  }
